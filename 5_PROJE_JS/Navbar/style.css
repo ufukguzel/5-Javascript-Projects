@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Spectral:wght@200&display=swap');
+
+* {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.mynav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #1e1e1e;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  cursor: pointer;
+}
+
+h2:hover {
+  color: turquoise;
+}
+
+.myLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s;
+  width: 1200px;
+  cursor: pointer;
+}
+
+.myLinks a {
+  font-size: 18px;
+}
+
+#mynavtoggle {
+  display: none;
+  border: none;
+  background: none;
+  transition: 0.5s;
+  color: whitesmoke;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+#mynavtoggle:hover {
+  color: turquoise;
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 600px) {
+  .mynav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .myLinks {
+    display: none;
+    transition: 0.5s;
+  }
+
+  .openLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #mynavtoggle {
+    display: block;
+  }
+}

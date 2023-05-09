@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Spectral:wght@200&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Spectral', serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 3rem; 
+}
+/*1rem= 16px */
+#btnColorChanger{
+    width: 15rem;
+    height: 2rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    
+}
